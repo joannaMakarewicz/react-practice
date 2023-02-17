@@ -1,15 +1,13 @@
 import "./App.scss";
 import Header from "./components/Header";
-import Input from "./components/Input";
-import List from "./components/List";
+import Tasks from "./components/Tasks";
 
 function App() {
   return (
-    <div>
+    <main className="app">
       <Header/>
-      <Input/>
-      <List/>
-    </div>
+      <Tasks/>
+    </main>
   );
 }
 

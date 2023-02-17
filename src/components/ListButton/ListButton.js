@@ -3,9 +3,7 @@ import './ListButton.scss';
 
 const ListButton = () => {
   return (
-    <div>
     <button>Done</button>
-    </div>
   )
 }
 
