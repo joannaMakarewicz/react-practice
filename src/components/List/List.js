@@ -1,7 +1,7 @@
 import React from "react";
 import "./List.scss";
 
-const List = ({task, taskCompleted}) => {
+const List = ({task}) => {
 
   return (
     <article>

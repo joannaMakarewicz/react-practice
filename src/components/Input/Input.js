@@ -8,7 +8,7 @@ const Input = ({ input, setInput, addTask }) => {
     <article className="input">
       <h2 className="input__header">Add your new task:</h2>
 
-      <input
+      <textarea
         className="input__input"
         onChange={(e) => {
           setNewTask(e.target.value);
@@ -17,9 +17,9 @@ const Input = ({ input, setInput, addTask }) => {
         name="input"
         type="text"
         value={input}
-      ></input>
+      ></textarea>
 
-      <button
+      <button className="input__button"
         onClick={() => {
           addTask(newTask);
           setInput("");

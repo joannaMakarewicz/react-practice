@@ -1,12 +1,9 @@
 .app {
-  align-items: center;
   background-color: #efefef;
   border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 0 auto;
-  padding: 6px;
+  max-height: 100vh;
+  padding: 26px;
   width: 80vw;
   @media screen and (min-width: 1024px) {
     width: 60vw;

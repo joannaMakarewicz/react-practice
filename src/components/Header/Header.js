@@ -3,8 +3,8 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <header>
-      <h1>Your TO DO list</h1>
+    <header className='header'>
+      <h1 className='header__heading'>Your TO DO list</h1>
     </header>
   )
 }
