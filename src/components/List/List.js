@@ -1,19 +1,18 @@
 import React from "react";
-import ListButton from "../ListButton";
 import "./List.scss";
 
-const List = () => {
-  const tasks = [ { content: "Zrób zakupy" }, { content: "Zrób obiad" }];
+const List = ({task, taskCompleted}) => {
 
   return (
     <article>
       <h3>Your tasks:</h3>
-      {tasks.map((task, index) => {
+      {task.map((element, index) => {
         return (
-          <div className="list" key={index}>
-            <p>{task.content}</p>
-            <ListButton />
+          <div className={`list ${element.isCompleted ? 'list__completed' : ''}`} key={index}>
+            <p>{element.content}</p>
+            <button>Done</button>
           </div>
+
         );
       })}
     </article>
