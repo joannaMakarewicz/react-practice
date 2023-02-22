@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FiCheck } from "react-icons/fi";
 import "./ListTask.scss";
 
 const ListTask = ({ element }) => {
@@ -8,7 +9,9 @@ const ListTask = ({ element }) => {
   return (
     <div className={`list ${isCompleted ? "list__completed" : ""}`}>
       <p className="listTask__heading">{element.content}</p>
-      <button className="listTask__button" onClick={addCompleted}>Done</button>
+      <div className="listTask__button">
+        <FiCheck className="listTask__icon" onClick={addCompleted} />
+      </div>
     </div>
   );
 };

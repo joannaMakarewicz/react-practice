@@ -1,7 +1,16 @@
 .listTask__button {
-    background-color:#2b9348;
-    border:none;
-    border-radius:6px;
-    color:#FFF;
-    padding: 6px;
+    align-items: center;
+    color:#2b9348;
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+.listTask__icon {
+    border: 1px solid #2b9348;
+}
+
+.listTask__heading {
+    overflow-wrap: break-word
 }

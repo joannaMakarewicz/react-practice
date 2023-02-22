@@ -1,7 +1,9 @@
 .list {
     border: 1px solid #111;
+    display: grid;
+    grid-template-columns: 70% 1fr;
     margin-bottom: 6px;
-    padding: 6px;
+    padding: 3px;
 }
 .list__completed {
     opacity:0.5;
