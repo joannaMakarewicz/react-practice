@@ -19,7 +19,8 @@ const Input = ({ input, setInput, addTask }) => {
         value={input}
       ></textarea>
 
-      <button className="input__button"
+      <button
+        className="input__button"
         onClick={() => {
           addTask(newTask);
           setInput("");

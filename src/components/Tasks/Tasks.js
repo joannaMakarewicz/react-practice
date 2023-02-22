@@ -5,17 +5,16 @@ import "./Tasks.scss";
 
 const Tasks = () => {
   const [task, setTask] = useState([
-    { id: "1", content: "Zrób zakupy", isCompleted: true },
-    { id: "2", content: "Zrób obiad", isCompleted: false },
-    { id: "3", content: "Ubierz choinkę", isCompleted: false },
+    { id: Math.random(), content: "Zrób zakupy" },
+    { id: Math.random(), content: "Zrób obiad" },
+    { id: Math.random(), content: "Ubierz choinkę" },
   ]);
 
   let [input, setInput] = useState("");
 
   const addTask = (e) => {
-    e ? setTask([{ content: e }, ...task]) : setTask(task);
+    e ? setTask([{ id: Math.random(), content: e }, ...task]) : setTask(task);
   };
-
 
   return (
     <section className="tasks">

@@ -1,20 +1,15 @@
 import React from "react";
+import ListTask from "../ListTask";
 import "./List.scss";
 
-const List = ({task}) => {
-
+const List = ({ task }) => {
+  const singleTask = task.map((element) => (
+    <ListTask element={element} key={element.id} />
+  ));
   return (
     <article>
       <h3>Your tasks:</h3>
-      {task.map((element, index) => {
-        return (
-          <div className={`list ${element.isCompleted ? 'list__completed' : ''}`} key={index}>
-            <p>{element.content}</p>
-            <button>Done</button>
-          </div>
-
-        );
-      })}
+      {singleTask}
     </article>
   );
 };
