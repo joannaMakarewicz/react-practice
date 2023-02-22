@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FiPlus } from "react-icons/fi";
 import "./Input.scss";
 
 const Input = ({ input, setInput, addTask }) => {
@@ -19,16 +20,14 @@ const Input = ({ input, setInput, addTask }) => {
         value={input}
       ></textarea>
 
-      <button
+      <FiPlus
         className="input__button"
         onClick={() => {
           addTask(newTask);
           setInput("");
           setNewTask("");
         }}
-      >
-        Add new
-      </button>
+      />
     </article>
   );
 };

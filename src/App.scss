@@ -1,8 +1,9 @@
 .app {
   background-color: #efefef;
   border-radius: 3px;
-  margin: 0 auto;
+  margin: 6px auto;
   max-height: 100vh;
+  overflow: visible;
   padding: 26px;
   width: 80vw;
   @media screen and (min-width: 1024px) {
