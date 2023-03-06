@@ -12,5 +12,10 @@
 }
 
 .listTask__heading {
+    align-items: center;
+    display: flex;
+    padding: 16px;
+    margin: 0;
     overflow-wrap: break-word
 }
+

@@ -1,3 +1,15 @@
 .tasks {
-    min-width: 100%;
-}
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+    margin: 6px auto;
+    overflow: scroll;
+    padding: 26px;
+  width: 80vw;
+    @media screen and (min-width: 1024px) {
+      width: 60vw;
+    }
+  }

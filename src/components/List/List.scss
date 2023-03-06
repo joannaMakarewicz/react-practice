@@ -1,4 +1,8 @@
 .list {
+    text-align: center;
+    width: 100%;
+}
+.list__item {
     border: 1px solid #111;
     display: grid;
     grid-template-columns: 70% 1fr;

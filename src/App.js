@@ -1,13 +1,22 @@
 import "./App.scss";
-import Header from "./components/Header";
-import Tasks from "./components/Tasks";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import ToDoList from "./pages/ToDoList/ToDoList";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <main className="app">
-      <Header/>
-      <Tasks/>
-    </main>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigate to="react-practice" />} />
+          <Route path="/react-practice" element={<Home />} />
+          <Route path="/toDoList" element={<ToDoList />} />
+        </Routes>
+      </Router>
   );
 }
 

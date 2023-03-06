@@ -7,7 +7,7 @@ const ListTask = ({ element }) => {
   const addCompleted = () => setIsCompleted(!isCompleted);
 
   return (
-    <div className={`list ${isCompleted ? "list__completed" : ""}`}>
+    <div className={`list__item ${isCompleted ? "list__completed" : ""}`}>
       <p className="listTask__heading">{element.content}</p>
       <div className="listTask__button">
         <FiCheck className="listTask__icon" onClick={addCompleted} />

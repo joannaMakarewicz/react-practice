@@ -4,11 +4,11 @@ import "./List.scss";
 
 const List = ({ task }) => {
   const singleTask = task.map((element) => (
-    <ListTask element={element} key={element.id} />
+    <ListTask element={element} key={element.id}/>
   ));
   return (
-    <article>
-      <h3>Your tasks:</h3>
+    <article className="list">
+      <h3 className="list__heading">Your tasks:</h3>
       {singleTask}
     </article>
   );
