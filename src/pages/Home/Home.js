@@ -1,6 +1,7 @@
 import React from 'react';
 import Invitation from '../../components/Invitation';
 import Navbar from '../../components/Navbar';
+import Projects from '../../components/Projects/Projects';
 import "./Home.scss";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <div >
       <Navbar/>
       <Invitation/>
+      <Projects/>
       </div>
 
     </div>
