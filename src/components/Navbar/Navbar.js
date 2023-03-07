@@ -4,11 +4,11 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <div className="progress-bar m-0 p-3 w-100">
+    <div className="myNavbar progress-bar m-0 p-3 w-100">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            <DiReact className="navbar-icon"/>
+            <DiReact className="myNavbar-icon"/>
           </a>
           <button
             className="navbar-toggler"
