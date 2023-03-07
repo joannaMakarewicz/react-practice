@@ -23,10 +23,10 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active me-3" aria-current="page" href="/">
+              <a className="nav-link active me-3 text-light" aria-current="page" href="/">
                 Home
               </a>
-              <a className="nav-link" href="/">
+              <a className="nav-link text-light" href="/">
                 Projects
               </a>
             </div>
