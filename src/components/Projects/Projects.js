@@ -14,17 +14,19 @@ const Projects = () => {
     getProject();
   }, []);
   return (
-    <div className="projects">
-      <h2 className="projects__heading text-center text-light mt-5">
+    <div >
+      <h2 className="projects__heading text-center text-light pt-5 pb-5">
         My Projects
       </h2>
-      {projects.map((project, index) => {
-        if (project.topics.includes('react'))
-        return (
-            <Card project={project}/>
-        )
-      })}
+      <div className="projects p-5">
+        {projects.map((project, index) => {
+          if (project.topics.includes('react'))
+          return (
+              <Card project={project}/>
+          )
+        })}
       </div>
+    </div>
   )
     }
 
