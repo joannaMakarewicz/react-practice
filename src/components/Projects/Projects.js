@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./Projects.scss";
+import Card from "../Card";
 
 const Projects = () => {
   const api = "https://api.github.com/users/joannaMakarewicz/repos";
@@ -18,18 +19,13 @@ const Projects = () => {
         My Projects
       </h2>
       {projects.map((project, index) => {
+        if (project.topics.includes('react'))
         return (
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <p>{project.name}</p>
-              </div>
-            </div>
-          </div>
-        );
+            <Card project={project}/>
+        )
       })}
-    </div>
-  );
-};
+      </div>
+  )
+    }
 
 export default Projects;
