@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-practice/static/css/main.bbeb4fda.css",
-    "main.js": "/react-practice/static/js/main.f5ad0f2d.js",
+    "main.css": "/react-practice/static/css/main.7eab5ad3.css",
+    "main.js": "/react-practice/static/js/main.92956545.js",
     "static/media/background.jpg": "/react-practice/static/media/background.b607c635b6c69a67f375.jpg",
-    "static/media/clock.png": "/react-practice/static/media/clock.102160862449b7d4f524.png",
+    "static/media/hotels.png": "/react-practice/static/media/hotels.102160862449b7d4f524.png",
     "index.html": "/react-practice/index.html",
-    "main.bbeb4fda.css.map": "/react-practice/static/css/main.bbeb4fda.css.map",
-    "main.f5ad0f2d.js.map": "/react-practice/static/js/main.f5ad0f2d.js.map"
+    "main.7eab5ad3.css.map": "/react-practice/static/css/main.7eab5ad3.css.map",
+    "main.92956545.js.map": "/react-practice/static/js/main.92956545.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbeb4fda.css",
-    "static/js/main.f5ad0f2d.js"
+    "static/css/main.7eab5ad3.css",
+    "static/js/main.92956545.js"
   ]
 }
